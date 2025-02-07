@@ -13,6 +13,10 @@ import pendulum
 def python_1_func():
     print("teste primeiro teste no fork")
 
+@aql.dataframe(task_id="python_2")
+def python_2_func():
+    print("Teste segundo teste no fork")
+
 default_args={
     "owner": "Claudio Correia,Open in Cloud IDE",
 }
@@ -29,5 +33,7 @@ default_args={
 )
 def teste():
     python_1 = python_1_func()
+
+    python_2 = python_2_func()
 
 dag_obj = teste()
