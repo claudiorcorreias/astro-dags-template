@@ -11,22 +11,20 @@ import pendulum
 
 @aql.dataframe(task_id="python_1")
 def python_1_func():
-    import pandas as pd
-    print("teste 444")
-    
+    print(3)
 
 default_args={
-    "owner": "Alex Lopes,Open in Cloud IDE",
+    "owner": "Associação dos Engenheiros do ITA,Open in Cloud IDE",
 }
 
 @dag(
     default_args=default_args,
     schedule="0 0 * * *",
-    start_date=pendulum.from_format("2024-12-06", "YYYY-MM-DD").in_tz("UTC"),
+    start_date=pendulum.from_format("2025-02-06", "YYYY-MM-DD").in_tz("UTC"),
     catchup=False,
     owner_links={
-        "Alex Lopes": "mailto:alexlopespereira@gmail.com",
-        "Open in Cloud IDE": "https://cloud.astronomer.io/cm3webulw15k701npm2uhu77t/cloud-ide/cm4c0t58m0c5r01o2scco40qz/cm4c16yzo0byn01o45x13t547",
+        "Associação dos Engenheiros do ITA": "mailto:aeita.office@gmail.com",
+        "Open in Cloud IDE": "https://cloud.astronomer.io/cm4d8ikzs00hi01llolal5yk0/cloud-ide/cm6ijl9vf02rd01mdrfq1s1we/cm6smrlfk20i701md4bewlp1x",
     },
 )
 def Teste2():
