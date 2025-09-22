@@ -1,4 +1,4 @@
-name: Astronomer CI - Deploy code (Multiple Branches)
+name: Main
 
 on:
   workflow_dispatch:
