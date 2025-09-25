@@ -76,7 +76,7 @@ def _build_openfda_url(start: date, end: date, drug_query: str) -> str:
 # O decorador `@task` transforma esta função Python em uma Task do Airflow.
 # O `pool=POOL_NAME` garante que esta task só execute se houver um "slot" disponível no pool "openfda_api".
 @task(pool=POOL_NAME)
-def fetch_range_and_to_bq(start_date: str, end_date: str):
+def fetch_range_and_to_bq(start_date: str = None, end_date: str = None):
     """
     Esta é a task principal. Ela executa o processo completo:
     1. Monta a URL da API.
