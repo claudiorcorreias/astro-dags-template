@@ -139,7 +139,7 @@ def fetch_range_and_to_bq(start_date: str = None, end_date: str = None):
 def openfda_pipeline():
     """Esta função define a estrutura da DAG, ou seja, quais tasks ela contém e em que ordem."""
     # Para este exercício, chamamos a task com um intervalo de datas fixo.
-    fetch_range_and_to_bq(start_date="2025-07-01", end_date="2025-07-31")
+    fetch_range_and_to_bq(start_date="2023-07-01", end_date="2023-07-31")
 
 # Esta linha final instancia a DAG, tornando-a visível para o Airflow.
 dag = openfda_pipeline()
